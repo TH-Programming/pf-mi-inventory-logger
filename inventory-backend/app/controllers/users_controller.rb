@@ -1,15 +1,13 @@
 class UsersController < ApplicationController
 
     def index
-        clubs = Clubs.all
+        users = User.all
 
-        render json: clubs
+        render json: users
     end
 
     def show
-        club = Club.find_by(params[:id])
 
-        render json: club
     end
 
     def create

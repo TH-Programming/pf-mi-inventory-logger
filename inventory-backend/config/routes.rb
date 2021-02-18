@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :manufacturers
+  resources :parts
   resources :equipment_models
   resources :users
   resources :clubs
